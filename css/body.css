@@ -1,0 +1,144 @@
+/* .site-content */
+/*.site-content {
+	padding-top: 50px;
+}*/
+.site-content {
+	font-size: 16px;
+}
+.main-header {
+	margin-bottom: 15px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+.main-header:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+}
+	.main-title {
+		font-size: 19px;
+    	padding: 12px 0;
+		position: relative;
+		text-align: center;
+		margin: 0;
+		color: #f1f1f1;
+		opacity: 0;
+		transform: translateY(50px);
+		-moz-transition: all 1s ease-in-out 0.5s;
+		-o-transition: all 1s ease-in-out 0.5s;
+		-webkit-transition: all 1s ease-in-out 0.5s;
+		transition: all 1s ease-in-out 0.5s;
+	}
+	.loaded .main-title {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+.site-main { /* fix page builder margin-overflow problem */
+	overflow-x: hidden;
+}
+body:not(.home) .site-main {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.5s ease-in-out 1s;
+}
+body.loaded:not(.home) .site-main {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.site-main.hide-entry-title .entry-title{
+	display: none;
+}
+.site-banner {
+	margin-bottom: 30px;
+}
+.site-banner .owl-nav i{
+	color: #fff;
+	font-size: 36px;
+	padding: 10px;
+	display: inline-block;
+	margin-top: -18px;
+	
+}
+.site-banner .owl-prev{
+	position: absolute;
+	left: 20px;
+	top: 50%;
+}
+.site-banner .owl-next{
+	position: absolute;
+	right: 20px;
+	top: 50%;
+}
+
+.content-area {
+	border-bottom: 2px solid #093d4b;
+	margin-bottom: 30px;
+	min-height: 200px;
+}
+.entry-meta {
+	font-size: 14px;
+	color: #888;
+	margin: -5px 0 15px;
+}
+	.entry-meta a{
+		color: #666;
+	}
+	.entry-meta a:hover{
+		color: #222;
+	}
+@media (min-width:768px) {
+	.site-content {
+		font-size: 17px;
+	}
+	.main-title {
+		font-size: 40px;
+		padding: 50px 0 40px;
+	}
+}
+
+@media (min-width:992px){
+	/*.container{width:970px} */
+	.main-header {
+		margin-bottom: 30px;
+	}
+		.main-title {
+			font-size: 45px;
+			padding: 50px 0 45px;
+		}
+	.content-area {
+		float: left;
+		width: 690px;
+		padding-right: 30px;
+		border: none;
+		margin-bottom: 0;
+	}
+	.widget-area{
+		float: right;
+		width: 250px;
+	}
+}
+
+@media (min-width:1200px){
+	/*.container{width:1170px} */
+	.site-content {
+		font-size: 18px;
+	}
+	.main-title {
+		font-size: 50px;
+		padding: 50px 0;
+	}
+	.content-area {
+		width: 840px;
+	}
+	.widget-area{
+		width: 300px;
+	}
+}

@@ -1,0 +1,156 @@
+/* jawpraya CSS 1.8.2 by seedthemes.com */
+@charset "UTF-8";
+.-desktop {display: none}
+@media (min-width:992px){.-mobile {display: none;}.-desktop {display: block;}}
+body { -webkit-backface-visibility: hidden;font-size: 15px;}
+body, input, textarea, select, button {text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;-moz-font-feature-settings: "liga", "kern";}
+.-clear:before,
+.-clear:after,
+.clearfix:before,
+.clearfix:after{content: "";display: table;}
+.-clear:after,
+.clearfix::after {clear: both;}
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {margin: 0 0 1.5em;overflow: hidden;}
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {float: left;width: 50%;}
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {float: right;text-align: right;width: 50%;}
+.comments-area {clear: both;}
+.screen-reader-text, #wpstats {position: absolute;left: -10000px;top: auto;width: 1px;height: 1px;overflow: hidden;}
+blockquote { background-color: rgb(251, 232, 255); color: #3E3746; border-bottom: 2px solid #B5A8B7; box-shadow: 0px 3px 2px #959595; position: relative; padding: 10px 20px; border-radius: 10px; }
+blockquote:before { content: '\f10d'; display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+blockquote p { padding-left: 20px; }
+.alignright { float: right; margin-left: 1em; margin-bottom: 1em; }
+.alignleft {float: left;margin-right: 1em;margin-bottom: 1em;}
+img {max-width:100%;height: auto;}
+img.centered, .aligncenter, div.aligncenter {display: block;margin-left: auto;margin-right: auto;}
+img.alignright {display: inline;}
+img.alignleft {display: inline;}
+.wp-caption{margin-bottom:1.5em;max-width:100%;}
+.wp-caption img[class*=wp-image-]{display:block;margin:0 auto;}
+.wp-caption-text{text-align:center;}
+.wp-caption .wp-caption-text{margin:.8em 0;}
+a,a:hover,a:focus,a[onclick]{text-decoration: none;outline: none;cursor: pointer;}
+p{margin: 0 0 1.5em;}
+hr {height: 1px;border: 0;border-top: 1px solid #ddd;margin: 1.5em 0;}
+.sticky {display: block;}
+.hentry ol {padding-left: 1.6em;text-indent: 0;margin: 0 0 1.5em;}
+.hentry ul {padding-left: 1.2em;text-indent: 0;margin: 0 0 1.5em;}
+.hentry li ul, 
+.hentry li ol {margin: 0.5em 0 0 1em;}
+.byline, .updated:not(.published) {display: none;}
+.bypostauthor {background-color: #f8f5e7;}
+.single .byline, .group-blog .byline {display: inline;}
+.page-content,.entry-content,.entry-summary {}
+.page-links {clear: both;margin: 0 0 1.5em;}
+.page-content img.wp-smiley,.entry-content img.wp-smiley,.comment-content img.wp-smiley{border:none;margin-bottom:0;margin-top:0;padding:0;}
+embed,iframe,object{max-width:100%;}
+.navigation {clear: both;}
+.entry-content .gallery{margin:0 -10px 1.5em;}
+.entry-content .gallery-item{display:inline-block;text-align:center;vertical-align:top;width:100%;margin: 0;padding: 10px;}
+.entry-content .gallery-columns-2 .gallery-item{max-width:50%;}
+.entry-content .gallery-columns-3 .gallery-item{max-width:33.33%;}
+.entry-content .gallery-columns-4 .gallery-item{max-width:25%;}
+.entry-content .gallery-columns-5 .gallery-item{max-width:20%;}
+.entry-content .gallery-columns-6 .gallery-item{max-width:16.66%;}
+.entry-content .gallery-columns-7 .gallery-item{max-width:14.28%;}
+.entry-content .gallery-columns-8 .gallery-item{max-width:12.5%;}
+.entry-content .gallery-columns-9 .gallery-item{max-width:11.11%;}
+.entry-content .gallery-caption{display:block;}
+.edit-link a{display:block;width:30px;height:30px;line-height:30px;border-radius:30px;background-color:rgba(0,0,0,.6);color:#fff;text-align:center;border:2px solid #fff;font-size:11px;overflow:hidden;z-index:999}
+.fb-comments{clear: both;display: block;}
+.fb-comments iframe,.fb-comments span{width: 100% !important;}
+.search-field {max-width: 100%;box-sizing: border-box;}
+.widget {margin-bottom: 1.5em;}
+.widget select {max-width: 100%;}
+.widget-title {font-size: 1.3em;}
+.widget-area .search-field {width: 150px;}
+.widget-area ul {padding: 0;}
+.widget-area li {list-style: none;}
+.site-main > .page-header {
+	margin: 0;
+	border: none;
+	padding: 0;
+}
+
+
+
+/* jawpraya Icons */
+@font-face {
+  font-family: "seed-icons";
+  src:url("seed-icons.eot");
+  src:url("seed-icons.eot?#iefix") format("embedded-opentype"),
+    url("seed-icons.woff") format("woff"),
+    url("seed-icons.ttf") format("truetype"),
+    url("seed-icons.svg#seed-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "seed-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="si-"]:before,
+[class*=" si-"]:before {
+  font: normal normal normal 14px/1 "seed-icons";
+  font-size: inherit;
+  speak: none;
+  vertical-align: -2px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.si-search:before {
+  content: "\e000";
+}
+.si-clock:before {
+  content: "\e004";
+}
+.si-calendar:before {
+  content: "\e005";
+}
+.si-phone:before {
+  content: "\e006";
+}
+.si-user:before {
+  content: "\e007";
+}
+.si-users:before {
+  content: "\e008";
+}
+.si-menu:before {
+  content: "\e009";
+}
+.si-caret-down:before {
+  content: "\e00a";
+}
+.si-folder:before {
+  content: "\e001";
+}
+.si-tag:before {
+  content: "\e002";
+}
+
+
+/* Loading */
+.loading-bg { background: #fff; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; }
+.loading { width: 30px; height: 30px; border: 5px solid #ccc; position: fixed; left: 50%; margin-left: -20px; top: 50%; margin-top: -20px; border-radius: 50%; }
+.loading:after { content: ''; position: absolute; width: 40px; height: 10px; background: #fff; top: 5px; left: -10px; animation: spin 1.2s infinite; }
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}

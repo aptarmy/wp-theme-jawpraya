@@ -1,0 +1,106 @@
+/* @override 
+	http://jawpraya/wp-content/themes/jawpraya/style-sample-foot-1.css */
+.site-content {
+	padding-bottom: 40px;
+}
+.home .site-content {
+	padding-bottom: 0;
+}
+
+/* Footer */
+.site-footer-desktop {
+	display: none;
+	background-color: #141519;
+	height: 80px;
+	overflow: hidden;
+}
+.site-footer-desktop .site-info {
+	width: 80%;
+	margin-top: 16px;	
+}
+.site-footer-desktop .site-logo {
+	float: left;
+}
+.site-footer-desktop .site-logo img {
+	height: 40px;
+}
+.site-footer-desktop .site-company-info {
+	float: left;
+	margin-left: 10px;
+}
+.site-footer-desktop .site-company-name {
+	color: #BDBDBD;
+	font-size: 16px;
+	margin: 0;
+}
+.site-footer-desktop .site-company-address {
+	color: #BDBDBD;
+	font-size: 12px;
+	margin: 0;
+}
+.site-footer-desktop .site-calltoaction {
+		float: right;
+	}
+	.site-footer-desktop .site-calltoaction .jpy-btn-calltoaction {
+	    color: rgba(255,255,255,1);
+	    text-decoration: none;
+	    background-color: rgba(219,87,5,1);
+	    font-weight: 700;
+	    font-size: 20px;
+	    font-family: "kanit-web";
+	    border-radius: 8px;
+	    box-shadow: 0px 9px 0px rgb(95, 38, 3), 0px 9px 25px rgba(0,0,0,.7);
+	    padding: 5px 15px;
+	    transition: all .1s ease;
+	    display: block;
+	    float: right;
+	    position: relative;
+	    top: 0px;
+	}
+	.site-footer-desktop .site-calltoaction .jpy-btn-calltoaction:hover, .site-footer-desktop .site-calltoaction .jpy-btn-calltoaction:active {
+		box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+		top: 6px;
+	}
+.site-footer-desktop .site-company-slogan {
+	color: #BDBDBD;
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 10px 0 0;
+	float: right;
+}
+.site-footer-mobile {
+	background-color: #141519;
+	padding: 10px;
+}
+.site-footer-mobile .site-copyright {
+	font-size: 14px;
+	line-height: 16px;
+	color: #A5A5A5;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+@media (min-width:768px) {
+	/* .container{width:750px} */
+	.site-footer-desktop {
+		display: block;
+	}
+	.site-footer-desktop .site-company-slogan {
+		display: none;
+	}
+	.site-footer-mobile {
+		display: none;
+	}
+}
+
+@media (min-width:992px){
+	/*.container{width:970px} */
+	.site-footer-desktop .site-company-slogan {
+		display: block;
+	}
+}
+
+@media (min-width:1200px){
+	/*.container{width:1170px} */
+}

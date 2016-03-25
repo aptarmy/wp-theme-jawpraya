@@ -1,0 +1,36 @@
+.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
+	min-width: 32px;
+}
+.woocommerce .quantity .qty {
+	line-height: 1.9;
+}
+.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message {
+	border-top: none;
+}
+.woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button {
+	margin: -5px -5px -5px 0;
+}
+.woocommerce-checkout #payment div.payment_box:after {
+	top: -2px;
+}
+
+
+
+
+
+@media (min-width:768px) {
+	/* .container{width:750px} */
+}
+
+@media (min-width:992px){
+	.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+		width: 36%;
+	}
+	.woocommerce-cart .cart-collaterals .cart_totals table {
+		width: 100%;
+	}
+}
+
+@media (min-width:1200px){
+	/*.container{width:1170px} */
+}
