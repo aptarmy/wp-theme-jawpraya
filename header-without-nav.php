@@ -24,18 +24,6 @@
 	<!-- Loading -->
 	<div class='loading-bg'><div class='loading'></div></div>
 
-	<!-- .site-toggle -->
-	<a class="site-toggle">
-		<div class="bar"></div>
-		<div class="bar"></div>
-		<div class="bar"> </div>
-	</a><!-- .site-toggle -->
-
-	<!-- #mobile-navigation -->
-	<nav id="site-mobile-navigation" class="site-mobile-navigation" role="navigation">
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
-	</nav><!--mobile-navigation-->
-
 	<!-- #page -->
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'jawpraya' ); ?></a>

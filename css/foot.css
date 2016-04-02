@@ -3,7 +3,7 @@
 .site-content {
 	padding-bottom: 40px;
 }
-.home .site-content {
+.page-template-page_home .site-content, .page-template-page_welcome .site-content {
 	padding-bottom: 0;
 }
 

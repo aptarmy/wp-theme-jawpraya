@@ -122,15 +122,6 @@ function jawpraya_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'Front Page Slider', 'jawpraya' ),
-		'id'            => 'frontpage-slider',
-		'description'   => 'This widget area is highly recommeded for Revolution Slider',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
 }
 add_action( 'widgets_init', 'jawpraya_widgets_init' );
 
@@ -157,8 +148,8 @@ function jawpraya_scripts() {
 	wp_enqueue_script( 'jawpraya-bootstrap3', get_stylesheet_directory_uri() . '/vendor/bootstrap3/js/bootstrap.min.js', array( 'jquery' ), array(), true );
 	wp_enqueue_script( 'jawpraya-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	//wp_enqueue_script( 'jawpraya-slidebars-script', get_template_directory_uri() . '/vendor/slidebars/slidebars.min.js', array(), '0.10.3', true );
-	// wp_enqueue_script( 'owl.carousel', get_template_directory_uri() . '/vendor/owl.carousel/owl.carousel.min.js', array(), '2.0.0-beta.2.4', true );
-	wp_enqueue_script( 'jawpraya-main', get_template_directory_uri() . '/js/main.js', array(), '2016-1', true );
+	//wp_enqueue_script( 'owl.carousel', get_template_directory_uri() . '/vendor/owl.carousel/owl.carousel.min.js', array(), '2.0.0-beta.2.4', true );
+	wp_enqueue_script( 'jawpraya-main', get_template_directory_uri() . '/js/main.js', array('jquery'), '2016-3', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

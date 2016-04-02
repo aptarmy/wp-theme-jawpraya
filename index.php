@@ -16,7 +16,11 @@ get_header(); ?>
 
 <div class="main-header">
 	<div class="container">
-		<h2 class="main-title"><?php single_post_title(); ?></h2>
+		<?php if(is_home()) : ?>
+			<h2 class="main-title"><?php _e('Latest News', 'jawpraya'); ?></h2>
+		<?php else : ?>
+			<h2 class="main-title"><?php single_post_title(); ?></h2>
+		<?php endif; ?>
 	</div>
 </div>
 

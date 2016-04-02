@@ -1,14 +1,27 @@
 /* @override 
 	https://th.seedthemes.com/wp-content/themes/seedthemes/css/head.css?ver=4.4.1 */
 
+/* .site */
+.site {
+	-webkit-transition: -webkit-filter 0.5s;
+	-moz-transition: -moz-filter 0.5s;
+	-o-transition: -o-filter 0.5s;
+	transition: filter 0.5s;
+}
+.menu-active .site {
+	-webkit-filter: blur(3px);
+	-mox-filter: blur(3px);
+	filter: blur(3px);
+}
+
 /* #masthead.site-header */
 .site-header {
 	position: absolute;
+	z-index: 1;
 	height: 50px;
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 999;
 }
 body.admin-bar .site-header {
 	top: 46px;
@@ -29,7 +42,7 @@ body.admin-bar .site-header {
 		max-width: none;
 	}
 		/* show full logo on homepage */
-		.home .site-header .site-logo { overflow: none; width: auto; }
+		.home .site-header .site-logo { overflow: auto; width: auto; }
 		.home .site-header .site-logo img { max-width: none; }
 
 	.site-title {
@@ -59,7 +72,7 @@ body.admin-bar .site-header {
 	transition: 0.3s;
 	cursor: pointer;
 	overflow: hidden;
-	z-index: 11;
+	z-index: 101;
 }
 .site-toggle .bar {
     height: 2px;
@@ -67,7 +80,7 @@ body.admin-bar .site-header {
     display: block;
     margin: 4px auto;
     position: relative;
-    background-color: #383838;
+    background-color: #fff;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -75,6 +88,9 @@ body.admin-bar .site-header {
     -o-transition: 0.4s;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+}
+.page-template-page_home .site-toggle .bar {
+	background-color: #383838;
 }
 .site-toggle:after {
 	content: '';
@@ -100,7 +116,7 @@ body.admin-bar .site-header {
 	-webkit-animation: circle-creation 1s forwards;
 	animation: circle-creation 1s forwards;
 }
-.menu-active .site-toggle .bar, body:not(.home) .site-toggle .bar {
+.menu-active .site-toggle .bar {
 	background-color: #fff;
 }
 .menu-active .site-toggle .bar:nth-of-type(1) {
@@ -137,7 +153,7 @@ body.admin-bar .site-header {
 .site-mobile-navigation {
 	font-size: 16px;
 	position: fixed;
-	background-color: rgba(7, 20, 49, 0.95);
+	background-color: rgba(0,0,0,0.6);
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
@@ -149,6 +165,7 @@ body.admin-bar .site-header {
 	transition: all 0.5s;
 	opacity: 0;
 	visibility: hidden;
+	z-index: 100;
 }
 	.site-mobile-navigation .menu {
 		padding: 0;
@@ -166,14 +183,14 @@ body.admin-bar .site-header {
 	.site-mobile-navigation li a {
 		display: block;
 		padding: 0.6rem 1.2rem;
+		border-radius: 10px;
 		font-size: 1.5rem;
-		color: #C6C6E5;
+		color: #fff;
 		text-align: center;
 		white-space: nowrap;
 	}
 	.site-mobile-navigation li a:hover{
-		color: #fff;
-		background-color: #545474;
+		background-color: #A7A4DC;
 	}
 	.site-mobile-navigation ul ul {
 		padding-left: 20px;
@@ -184,8 +201,8 @@ body.admin-bar .site-header {
 	opacity: 1;
 }
 
-/* Revolution slider in homepage */
-.home .widget_revslider {
+/* Revolution slider in Welcome Page Template & Home Page template */
+.page-template-page_welcome .widget_revslider, .page-template-page_home .widget_revslider {
 	margin-bottom: 0;
 }
 

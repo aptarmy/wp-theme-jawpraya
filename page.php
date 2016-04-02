@@ -21,20 +21,20 @@ get_header();?>
 </div>
 
 <div class="container">
-		<main id="main" class="site-main hide-entry-title" role="main">
+	<main id="main" class="site-main hide-entry-title" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+			
+			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+			<?php
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+			?>
 
-			<?php endwhile; // End of the loop. ?>
-	</div><!-- #primary -->
+		<?php endwhile; // End of the loop. ?>
+	</main>
 </div><!--container-->
 <?php get_footer(); ?>
