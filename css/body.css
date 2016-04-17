@@ -22,9 +22,9 @@
 	bottom: 0;
 	background-color: rgba(0,0,0,0.7);
 }
-	.main-title {
+	.main-header .main-title {
 		font-size: 19px;
-    	padding: 12px 0;
+		padding: 12px 0;
 		position: relative;
 		text-align: center;
 		margin: 0;
@@ -40,6 +40,50 @@
 		opacity: 1;
 		transform: translateY(0px);
 	}
+
+
+.main-header-styled-title {
+	position: absolute;
+	z-index: 8;
+	right: 0;
+	left: 0;
+	top: 0;
+	height: 50px;
+}
+.main-header-styled-title .main-title {
+	margin: 0 auto;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(8, 1, 31, 0.7);
+	color: whitesmoke;
+}
+.main-header-styled-title .main-title:before {
+	content: "";
+    display: none;
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent rgba(8, 1, 31, 0.7) transparent transparent;
+}
+.main-header-styled-title .main-title:after {
+	content: "";
+    display: none;
+    position: absolute;
+    right: -50px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 0;
+    border-color: rgba(8, 1, 31, 0.7) transparent transparent transparent;
+}
 .site-main { /* fix page builder margin-overflow problem */
 	overflow-x: hidden;
 }
@@ -53,7 +97,7 @@ body.loaded:not(.home) .site-main {
 	transform: translateY(0px);
 }
 
-.site-main.hide-entry-title .entry-title{
+.hide-entry-title .entry-title{
 	display: none;
 }
 .site-banner {
@@ -98,9 +142,20 @@ body.loaded:not(.home) .site-main {
 	.site-content {
 		font-size: 17px;
 	}
-	.main-title {
+	.main-header .main-title {
 		font-size: 40px;
 		padding: 50px 0 40px;
+	}
+
+	/* page template stled title */
+	.main-header-styled-title .main-title {
+		width: 500px;
+	}
+	.main-header-styled-title .main-title:before {
+	    display: block;
+	}
+	.main-header-styled-title .main-title:after {
+	    display: block;
 	}
 }
 
@@ -109,10 +164,10 @@ body.loaded:not(.home) .site-main {
 	.main-header {
 		margin-bottom: 30px;
 	}
-		.main-title {
-			font-size: 45px;
-			padding: 50px 0 45px;
-		}
+	.main-header .main-title {
+		font-size: 45px;
+		padding: 50px 0 45px;
+	}
 	.content-area {
 		float: left;
 		width: 690px;
@@ -131,7 +186,7 @@ body.loaded:not(.home) .site-main {
 	.site-content {
 		font-size: 18px;
 	}
-	.main-title {
+	.main-header .main-title {
 		font-size: 50px;
 		padding: 50px 0;
 	}

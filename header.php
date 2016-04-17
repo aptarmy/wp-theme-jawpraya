@@ -44,7 +44,7 @@
 				<div class="site-branding">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<div class="site-logo">
-							<?php if ( is_front_page() || is_page_template('page_home.php') ) : ?>
+							<?php if ( is_front_page() || is_page_template('page_home.php') || is_page_template('page_styled-title.php') ) : ?>
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-dark.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 							<?php else: ?>
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-light.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
