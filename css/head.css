@@ -75,19 +75,19 @@ body.admin-bar .site-header {
 	z-index: 101;
 }
 .site-toggle .bar {
-    height: 2px;
-    width: 25px;
-    display: block;
-    margin: 4px auto;
-    position: relative;
-    background-color: #fff;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+	height: 2px;
+	width: 25px;
+	display: block;
+	margin: 4px auto;
+	position: relative;
+	background-color: #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 .page-template-page_home .site-toggle .bar {
 	background-color: #383838;
@@ -153,7 +153,7 @@ body.admin-bar .site-header {
 .site-mobile-navigation {
 	font-size: 16px;
 	position: fixed;
-	background-color: rgba(24, 8, 74, 0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
@@ -167,13 +167,13 @@ body.admin-bar .site-header {
 	visibility: hidden;
 }
 	.site-mobile-navigation .menu {
-		padding: 30px 15px;
 		border-radius: 15px;
-		background-color: rgba(24, 8, 74, 0.6);
 		position: absolute;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
+		overflow: hidden;
+		box-shadow: #333333 0px 0px 30px;
 	}
 	.site-mobile-navigation ul {
 		padding: 0;
@@ -184,14 +184,16 @@ body.admin-bar .site-header {
 	.site-mobile-navigation li a {
 		display: block;
 		padding: 0.6rem 1.2rem;
-		border-radius: 10px;
 		font-size: 1.5rem;
-		color: #fff;
+		color: #636363;
 		text-align: center;
 		white-space: nowrap;
+		border-bottom: 1px solid #C7C7C7;
+		background-image: -webkit-linear-gradient(top, white 60%, whitesmoke);
 	}
 	.site-mobile-navigation li a:hover{
-		background-color: #A7A4DC;
+		background-image: -webkit-linear-gradient(top, #5D5D5D 0%, #929292 70%, #888888 100%);
+		color: white;
 	}
 	.site-mobile-navigation ul ul {
 		padding-left: 20px;
@@ -249,7 +251,7 @@ body.admin-bar .site-header {
 		margin: 0;
 	}
 	.site-mobile-navigation li a {
-		padding: 1.8rem 1.5rem;
+		padding: 2.3rem 2.5rem;
 		font-size: 3rem;
 	}
 }
