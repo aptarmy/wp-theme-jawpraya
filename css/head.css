@@ -220,7 +220,7 @@ body.admin-bar .site-header {
 		font-size: 1.7rem;
 	}
 
-	/* change burger bg color if its on page template "page_styled_title" */
+	/* change burger bg color if its on page template "page_styled-title" */
 	.page-template-page_styled-title .site-toggle .bar {
 		background-color: #383838;
 	}

@@ -23,8 +23,6 @@ Font-weight:
 900 Black (Heavy)
 */
 
-@import url("fontface.css");
-
 body {
 	font: 18px/1.6em sans-serif;
 	color: #333;

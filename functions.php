@@ -82,6 +82,9 @@ function jawpraya_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// Add editor style in TinyMCE
+	add_editor_style(array(get_template_directory_uri() . '/css/editor-style.css', get_template_directory_uri() . '/css/fontface.css'));
 }
 endif; // jawpraya_setup
 add_action( 'after_setup_theme', 'jawpraya_setup' );
@@ -133,6 +136,7 @@ function jawpraya_scripts() {
 	wp_enqueue_style( 'jawpraya-bootstrap3', get_stylesheet_directory_uri() . '/vendor/bootstrap3/css/bootstrap-grid.css' );
 	wp_enqueue_style( 'jawpraya-font-awesome', get_stylesheet_directory_uri() . '/vendor/font-awesome/css/font-awesome.min.css' );
 	wp_enqueue_style( 'jawpraya-start', get_stylesheet_directory_uri() . '/vendor/seedthemes/seed.css' );
+	wp_enqueue_style( 'jawpraya-fontface', get_stylesheet_directory_uri() . '/css/fontface.css' );
 	wp_enqueue_style( 'jawpraya-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'jawpraya-head', get_stylesheet_directory_uri() . '/css/head.css' );
 	wp_enqueue_style( 'jawpraya-body', get_stylesheet_directory_uri() . '/css/body.css' );
@@ -161,7 +165,7 @@ add_action( 'wp_enqueue_scripts', 'jawpraya_scripts' );
  * Enqueue Script in admin page
  */
 function jawpraya_admin_script() {
-    wp_enqueue_style( 'jawpraya-font-face', get_template_directory_uri() . '/fontface.css' );
+    wp_enqueue_style( 'jawpraya-font-face', get_template_directory_uri() . '/css/fontface.css' );
 }
 add_action( 'admin_enqueue_scripts', 'jawpraya_admin_script' );
 

@@ -7,24 +7,21 @@ get_header(); ?>
 		<h2 class="main-title"><?php the_title(); ?></h2>
 	</div>
 	<main id="main" class="site-main hide-entry-title" role="main">
-		
-		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'page' ); ?>
+		<div class="container">		
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-		<?php endwhile; // End of the loop. ?>
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
+
+			<?php endwhile; // End of the loop. ?>
+		</div>
 
 	</main><!-- #main -->
-</div><!-- .site-content -->
-</div><!-- #page -->
-<?php wp_footer(); ?>
-</body>
-</html>
-
+<?php get_footer(); ?>

@@ -84,6 +84,8 @@
     border-width: 50px 50px 0 0;
     border-color: rgba(8, 1, 31, 0.7) transparent transparent transparent;
 }
+
+/* .site-main */
 .site-main { /* fix page builder margin-overflow problem */
 	overflow-x: hidden;
 }
@@ -95,6 +97,9 @@ body:not(.home) .site-main {
 body.loaded:not(.home) .site-main {
 	opacity: 1;
 	transform: translateY(0px);
+}
+body.page-template-page_styled-title:not(.siteorigin-panels) .site-main {
+    padding-top: 70px;
 }
 
 .hide-entry-title .entry-title{
