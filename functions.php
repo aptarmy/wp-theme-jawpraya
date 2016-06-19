@@ -143,6 +143,7 @@ function jawpraya_scripts() {
 	wp_enqueue_style( 'jawpraya-side', get_stylesheet_directory_uri() . '/css/side.css' );
 	wp_enqueue_style( 'jawpraya-etc', get_stylesheet_directory_uri() . '/css/etc.css' );
 	wp_enqueue_style( 'jawpraya-foot', get_stylesheet_directory_uri() . '/css/foot.css' );
+	wp_enqueue_style( 'jawpraya-content', get_stylesheet_directory_uri() . '/css/content.css' );
 
 	/* JS */
 	/* Move jQuery to footer for good Page Speed */

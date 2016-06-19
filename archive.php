@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div class="main-header">
+<div class="main-header" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/undersea.jpg);">
 	<div class="container">
 		<?php the_archive_title( '<h2 class="main-title">', '</h2>' ); ?>
 	</div>
@@ -17,14 +17,14 @@ get_header(); ?>
 
 <div class="container">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main hide-entry-title" role="main">
+		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title entry-title hide">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+					the_archive_description( '<div class="taxonomy-description hide">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 

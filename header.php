@@ -50,12 +50,8 @@
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-light.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 							<?php endif; // End header image check. ?>
 						</div>
-						<?php if ( is_front_page() && is_home() ) : ?>
-							<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-						<?php else : ?>
-							<p class="site-title"><?php bloginfo( 'name' ); ?></p>
-						<?php endif;
-
+						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+						<?php
 						$description = get_bloginfo( 'description', 'display' );
 						if ( $description || is_customize_preview() ) : ?>
 						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>

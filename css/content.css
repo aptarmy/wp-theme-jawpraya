@@ -1,0 +1,26 @@
+.content-area article {
+	background-color: white;
+}
+.content-area .post:not(:last-child){
+	margin-bottom: 30px;
+}
+.content-area article .entry-header {
+	padding: 30px 30px 0;
+}
+.content-area article .entry-content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+a.more-link {
+    background-color: #ae910d;
+    color: #fff;
+    display: inline-block;
+    float: right;
+    padding: 0.5em 1.1em;
+    border-radius: 15px;
+    font-family: "kanit-web", Arial, "sanse-serif";
+}
+a.more-link:hover {
+    background-color: #74641e;
+}

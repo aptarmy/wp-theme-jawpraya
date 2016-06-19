@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<div class="site-calltoaction">
-				<a class="jpy-btn-calltoaction" href="#">ติดต่อเรา</a>
+				<a class="jpy-btn-calltoaction" href="<?php echo get_home_url(); ?>/ติดต่อเรา">ติดต่อเรา</a>
 				<p class="site-company-slogan">ตู้กดน้ำระบบพาสเวิร์ด ที่แรก และที่เดียวในประเทศไทย<br>ให้ธุรกิจคอนโดและอพาร์ทเม้นท์ของคุณล้ำหน้าไปอีกขั้น</p>
 			</div>
 		</div>

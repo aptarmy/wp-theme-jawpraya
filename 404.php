@@ -7,7 +7,7 @@
  * @package jawpraya
  */
 get_header(); ?>
-<header class="main-header">
+<header class="main-header" style="background-image: url(<?php echo get_template_directory_uri() ?>/img/undersea.jpg)">
 	<h1 class="main-title"><?php esc_html_e( '404 page not found', 'jawpraya' ); ?></h1>
 </header><!-- .page-header -->
 <div class="container">

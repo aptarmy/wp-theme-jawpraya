@@ -6,7 +6,7 @@ get_header(); ?>
 	<div class="main-header-styled-title">
 		<h2 class="main-title"><?php the_title(); ?></h2>
 	</div>
-	<main id="main" class="site-main hide-entry-title" role="main">
+	<main id="main" class="site-main" role="main">
 
 		<div class="container">		
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -24,4 +24,21 @@ get_header(); ?>
 		</div>
 
 	</main><!-- #main -->
+	<style type="text/css">
+		body {
+			background-image: url(<?php jawpraya_entry_img(); ?>);
+		    background-position: center;
+		    background-size: cover;
+		    background-repeat: repeat;
+		    background-attachment: fixed;
+		}
+		body:after {
+			content: "";
+			display: block;
+			position: fixed;
+			z-index: -1;
+			left:0; right:0; top:0; bottom:0;
+			background-color: rgba(255,255,255,0.7);
+		}
+	</style>
 <?php get_footer(); ?>

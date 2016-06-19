@@ -30,7 +30,7 @@ if ( !function_exists('jawpraya_entry_img') ) :
 			if(isset($matches[1][0])) {
 				$first_img = $matches[1][0];
 			} else {
-				$first_img = "";
+				//$first_img = get_template_directory_uri() . "/img/undersea.jpg";
 			}
 			echo $first_img;
 		}
@@ -101,7 +101,7 @@ function jawpraya_entry_footer() {
 			esc_html__( 'Edit this post %s', 'jawpraya' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
-		'<span class="arm-edit-link">',
+		'<span class="edit-link">',
 		'</span>'
 	);
 }

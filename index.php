@@ -14,10 +14,10 @@
 
 get_header(); ?>
 
-<div class="main-header">
+<div class="main-header" style="background-image: url(<?php echo get_template_directory_uri() ?>/img/undersea.jpg)">
 	<div class="container">
 		<?php if(is_home()) : ?>
-			<h2 class="main-title"><?php _e('Latest News', 'jawpraya'); ?></h2>
+			<h2 class="main-title"><?php _e('สาระน่ารู้', 'jawpraya'); ?></h2>
 		<?php else : ?>
 			<h2 class="main-title"><?php single_post_title(); ?></h2>
 		<?php endif; ?>

@@ -21,7 +21,7 @@ get_header();?>
 </div>
 
 <div class="container">
-	<main id="main" class="site-main hide-entry-title" role="main">
+	<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 			

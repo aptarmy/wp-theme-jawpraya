@@ -1,6 +1,11 @@
 /* @override 
 	https://th.seedthemes.com/wp-content/themes/seedthemes/css/head.css?ver=4.4.1 */
 
+/* body */
+body {
+ 	background-color: #f1f1f1;
+}
+
 /* .site */
 .site {
 	-webkit-transition: -webkit-filter 0.5s;
@@ -45,8 +50,19 @@ body.admin-bar .site-header {
 		.home .site-header .site-logo { overflow: auto; width: auto; }
 		.home .site-header .site-logo img { max-width: none; }
 
-	.site-title {
-		display: none;
+	/* show site-title on mobile device */
+	.site-title { display: none; }
+	.blog .site-title, .page-template-default .site-title, .page-template-page_sidebar .site-title, .archive .site-title, .single .site-title, .error404 .site-title {
+		display: block;
+		color: white;
+	    text-align: center;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    margin: 0;
+	    padding: 10px 0;
+	    font-size: 1.2em;
 	}
 
 	.site-description{
@@ -174,6 +190,8 @@ body.admin-bar .site-header {
 		transform: translate(-50%, -50%);
 		overflow: hidden;
 		box-shadow: #333333 0px 0px 30px;
+		margin: 0;
+		padding: 0;
 	}
 	.site-mobile-navigation ul {
 		padding: 0;
@@ -192,7 +210,7 @@ body.admin-bar .site-header {
 		background-image: -webkit-linear-gradient(top, white 60%, whitesmoke);
 	}
 	.site-mobile-navigation li a:hover{
-		background-image: -webkit-linear-gradient(top, #5D5D5D 0%, #929292 70%, #888888 100%);
+		background-image: -webkit-linear-gradient(top, #2e4882 -30%, #536fad 50%, #4e51a0 130%);
 		color: white;
 	}
 	.site-mobile-navigation ul ul {
@@ -214,6 +232,9 @@ body.admin-bar .site-header {
 	/* Trim logo in mobile */
 	.site-header .site-logo { width: auto; }
 	.site-header .site-logo img { max-width: 100%; }
+
+	/* Hide site-title on desktop */
+	.blog .site-header .site-title, .page-template-default .site-title, .page-template-page_sidebar .site-title, .archive .site-title, .single .site-header .site-title, .error404 .site-title { display: none; }
 
 	.site-mobile-navigation li a {
 		padding: 1.5rem 1.3rem;
