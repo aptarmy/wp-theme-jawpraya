@@ -33,6 +33,9 @@ body.page-template-page_styled-title:not(.siteorigin-panels) .site-main { paddin
 .entry-meta a:hover { color: #222; }
 .comments-link a, .edit-link a { display: inline-block; background-color: #333; color: white; padding: 0 0.4em; margin: 0px 0.5em; }
 .comments-link a:hover, .edit-link a:hover { background-color: #555; color:white; }
+
+/* Search form */
+.search-form { margin-bottom: 15px; }
 @media (min-width:768px) {
 	.content-area { float: right; width: 100%; border: none; margin-bottom: 30px; padding: 0 15px 0 15px; }
 	.widget-area { float: left; width: 100%; padding: 0 15px 0 15px; }
