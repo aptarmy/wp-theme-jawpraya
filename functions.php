@@ -104,10 +104,10 @@ add_action( 'after_setup_theme', 'jawpraya_content_width', 0 );
 /**
  * Remove admin bar for all users
  */
-function jaw_praya_remove_admin_bar() {
+function jawpraya_remove_admin_bar() {
 	show_admin_bar(false);
 }
-add_action('after_setup_theme', 'jaw_praya_remove_admin_bar');
+add_action('after_setup_theme', 'jawpraya_remove_admin_bar');
 
 
 /**
